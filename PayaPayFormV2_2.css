@@ -1,0 +1,285 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap);
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff0
+}
+
+.payForm {
+    box-sizing: border-box;
+    font-family: 'Open Sans', arial, verdana, helvetica, sans-serif;
+    font-size: 15px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: #1f3a4a;
+    background: #fff0
+}
+
+.payForm * {
+    box-sizing: border-box
+}
+
+#payform_title,
+#payform_amounts,
+.payform_amount_label,
+.payform_amount_value {
+    display: none !important
+}
+
+.payform_field {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+    min-height: auto;
+    column-gap: 15px;
+    row-gap: 4px
+}
+
+.payform_field_label,
+#payform_errors label {
+    flex: 0 0 33%;
+    font-weight: 500;
+    color: #222;
+    font-size: 15px;
+    line-height: 1.42857143;
+    text-align: right;
+    padding-right: 15px
+}
+
+.payform_field_required_indicator {
+    color: #039BE5;
+    margin-left: 2px
+}
+
+.payform_field_input,
+.payform_field_select {
+    flex: 1 1 66%;
+    display: block;
+    width: auto;
+    border: 1px solid #d0d5dc;
+    border-radius: 4px;
+    background: #fff;
+    color: #222;
+    font-family: inherit;
+    max-width: 400px;
+    height: 27px;
+    padding: 2px 12px;
+    position: relative;
+    top: 0;
+    font-size: 15px;
+    line-height: 1.42857143;
+    text-align: left;
+    color: #222;
+    background: #fff;
+    border: 1px solid #b7b7b7;
+    border-radius: 0;
+    display: inline-block;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / .075);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / .075);
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / .075) 0 1px #000;
+    -moz-box-shadow: inset 0 1px 1px rgb(0 0 0 / .075) 0 1px #000;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / .075) 0 1px #000;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -ms-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+.payform_field_select {
+    padding: 2px 12px
+}
+
+.payform_field_select {
+    appearance: auto
+}
+
+.payform_field_input:focus,
+.payform_field_select:focus {
+    outline: none;
+    border-color: #43c0b0;
+    box-shadow: 0 0 0 2px rgb(67 192 176 / .2)
+}
+
+.payForm textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 8px 10px;
+    border: 1px solid #d0d5dc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px
+}
+
+.payForm textarea:focus {
+    outline: none;
+    border-color: #43c0b0;
+    box-shadow: 0 0 0 2px rgb(67 192 176 / .2)
+}
+
+.has-error,
+.payform_field_input.has-error,
+.payform_field_select.has-error {
+    border-color: #c0392b;
+    box-shadow: 0 0 0 2px rgb(192 57 43 / .15)
+}
+
+.has-error:focus {
+    border-color: #a93226;
+    box-shadow: 0 0 0 2px rgb(192 57 43 / .25)
+}
+
+#payform_errors {
+    color: #a94442;
+    background-color: #fdecea;
+    border: 1px solid #f5c6c2;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin: 12px 0
+}
+
+#payform_errors p {
+    margin: 3px 0
+}
+
+#payform_success {
+    color: #2c7a3d;
+    background-color: #e6f4ea;
+    border: 1px solid #c3e2cb;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin: 12px 0
+}
+
+#payform_warning {
+    padding: 8px 10px;
+    border: 1px solid #fad571;
+    border-radius: 4px;
+    background-color: #fff8e1
+}
+
+#payform_buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+    justify-content: flex-start;
+    gap: calc(33% + 15px);
+    text-align: center
+}
+
+.payform_button {
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0;
+    border: 1px solid #fff0;
+    padding: 5px 15px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    border-radius: 2px;
+    font-weight: 400;
+    text-transform: none;
+    -webkit-transition: all 225ms;
+    -moz-transition: all 225ms;
+    -ms-transition: all 225ms;
+    -o-transition: all 225ms;
+    transition: all 225ms
+}
+
+.payform_button:focus {
+    outline: 2px solid rgb(67 192 176 / .45);
+    outline-offset: 2px
+}
+
+.payform_button:disabled {
+    opacity: .4;
+    cursor: not-allowed
+}
+
+.payform_button_action {
+    color: #fff;
+    background: #222;
+    border-color: #222
+}
+
+.payform_button_action:hover {
+    color: #222;
+    background-color: #fff0;
+    border-color: #222
+}
+
+#payform_button_close {
+    display: none !important
+}
+
+#payform_buttons_process_methods {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px
+}
+
+.payform_button_process_method_active {
+    color: #fff;
+    background-color: #222;
+    border-color: #222
+}
+
+.payform_button_process_method_inactive {
+    color: #222;
+    background-color: #fff;
+    border-color: #222
+}
+
+@media (max-width:480px) {
+    .payform_field {
+        flex-direction: column;
+        align-items: stretch
+    }
+
+    .payform_field_label,
+    #payform_errors label {
+        flex: 1 1 100%
+    }
+
+    .payform_field_input,
+    .payform_field_select {
+        flex: 1 1 100%
+    }
+
+    #payform_buttons {
+        justify-content: stretch
+    }
+
+    .payform_button_action {
+        flex: 1 1 auto
+    }
+
+    #payform_buttons {
+        gap: 0
+    }
+
+    .payform_field_label,
+    #payform_errors label {
+        text-align: left
+    }
+}
+
+@media (max-width:624px) {
+
+    .payform_field_label,
+    #payform_errors label {
+        text-align: left
+    }
+}
+
+@media (max-width:624px) {
+    #payform_buttons {
+        gap: 0
+    }
+}
